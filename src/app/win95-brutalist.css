@@ -1,0 +1,598 @@
+/* Win95 Brutalist Theme CSS System */
+
+/* CSS Variables for Win95 Brutalist Theme */
+:root {
+  /* Win95 Color Palette */
+  --win95-teal: #008080;
+  --win95-gray: #808080;
+  --win95-silver: #C0C0C0;
+  --win95-white: #FFFFFF;
+  --win95-black: #000000;
+  --win95-blue: #0000FF;
+  
+  /* Win95 UI Colors */
+  --win95-bg: #008080;
+  --win95-window-bg: #C0C0C0;
+  --win95-window-border-dark: #000000;
+  --win95-window-border-light: #FFFFFF;
+  --win95-button-face: #C0C0C0;
+  --win95-button-shadow: #808080;
+  --win95-button-highlight: #FFFFFF;
+  --win95-text: #000000;
+  --win95-disabled-text: #808080;
+  --win95-selected-bg: #000080;
+  --win95-selected-text: #FFFFFF;
+  
+  /* Brutalist Accent Colors */
+  --brutalist-red: #FF0000;
+  --brutalist-yellow: #FFFF00;
+  --brutalist-green: #00FF00;
+  --brutalist-magenta: #FF00FF;
+  
+  /* Spacing System (8px grid) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  
+  /* Component-specific padding and margins */
+  --padding-button: 4px 8px;
+  --padding-input: 4px;
+  --padding-window: 8px;
+  --padding-card: 16px;
+  --margin-component: 8px;
+  --margin-section: 16px;
+  
+  /* Typography */
+  --font-win95-arial: 'Arial', sans-serif;
+  --font-win95-ms-sans: 'MS Sans Serif', 'Arial', sans-serif;
+  --font-win95-courier: 'Courier New', monospace;
+  
+  /* Border widths */
+  --border-win95: 2px;
+  
+  /* Effects */
+  --scanline-opacity: 0.1;
+}
+
+/* Win95 Brutalist Typography System */
+.win95-brutalist {
+  font-family: var(--font-win95-ms-sans);
+  color: var(--win95-text);
+  background-color: var(--win95-bg);
+  line-height: 1.2;
+}
+
+/* Brutalist Headlines */
+.win95-brutalist h1 {
+  font-family: var(--font-win95-arial);
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin: var(--spacing-lg) 0;
+  color: var(--win95-black);
+  text-shadow: 
+    2px 2px 0 var(--brutalist-red),
+    4px 4px 0 var(--brutalist-yellow);
+}
+
+.win95-brutalist h2 {
+  font-family: var(--font-win95-arial);
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: var(--spacing-md) 0;
+  color: var(--win95-black);
+  text-shadow: 
+    1px 1px 0 var(--brutalist-green),
+    2px 2px 0 var(--brutalist-magenta);
+}
+
+.win95-brutalist h3 {
+  font-family: var(--font-win95-arial);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin: var(--spacing-md) 0;
+  color: var(--win95-black);
+  text-shadow: 1px 1px 0 var(--brutalist-red);
+}
+
+.win95-brutalist h4 {
+  font-family: var(--font-win95-arial);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: var(--spacing-sm) 0;
+  color: var(--win95-black);
+}
+
+.win95-brutalist h5 {
+  font-family: var(--font-win95-arial);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: var(--spacing-sm) 0;
+  color: var(--win95-black);
+}
+
+.win95-brutalist h6 {
+  font-family: var(--font-win95-arial);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: var(--spacing-sm) 0;
+  color: var(--win95-black);
+}
+
+/* Body text */
+.win95-brutalist p {
+  font-family: var(--font-win95-ms-sans);
+  font-size: 16px;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.win95-brutalist a {
+  color: var(--win95-blue);
+  text-decoration: underline;
+}
+
+.win95-brutalist a:hover {
+  color: var(--brutalist-red);
+}
+
+/* Code and preformatted text */
+.win95-brutalist code {
+  font-family: var(--font-win95-courier);
+  font-size: 14px;
+  background-color: var(--win95-silver);
+  padding: 2px 4px;
+}
+
+.win95-brutalist pre {
+  font-family: var(--font-win95-courier);
+  font-size: 14px;
+  background-color: var(--win95-silver);
+  padding: var(--spacing-sm);
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  overflow-x: auto;
+}
+
+/* Lists */
+.win95-brutalist ul, .win95-brutalist ol {
+  font-family: var(--font-win95-ms-sans);
+  font-size: 16px;
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.win95-brutalist li {
+  margin-bottom: 4px;
+}
+
+/* Win95 Window and Card Styling */
+.win95-window {
+  background-color: var(--win95-window-bg);
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  box-shadow: 
+    1px 1px 0 var(--win95-window-border-light),
+    -1px -1px 0 var(--win95-window-border-dark);
+  padding: var(--padding-window);
+  margin: var(--margin-component);
+}
+
+.win95-window-inset {
+  background-color: var(--win95-window-bg);
+  border: var(--border-win95) solid var(--win95-window-border-light);
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-window-border-dark),
+    inset -1px -1px 0 var(--win95-window-border-light);
+  padding: var(--padding-window);
+  margin: var(--margin-component);
+}
+
+.win95-card {
+  background-color: var(--win95-white);
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  box-shadow: 
+    1px 1px 0 var(--win95-window-border-light),
+    -1px -1px 0 var(--win95-window-border-dark);
+  padding: var(--padding-card);
+  margin: var(--margin-component);
+}
+
+/* Win95 Button Styles */
+.win95-button {
+  background-color: var(--win95-button-face);
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  box-shadow: 
+    1px 1px 0 var(--win95-window-border-light),
+    -1px -1px 0 var(--win95-window-border-dark);
+  padding: var(--padding-button);
+  font-family: var(--font-win95-ms-sans);
+  font-size: 16px;
+  color: var(--win95-text);
+  cursor: pointer;
+  outline: none;
+  margin: var(--spacing-xs);
+}
+
+.win95-button:hover {
+  background-color: var(--win95-silver);
+}
+
+.win95-button:active {
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-window-border-dark),
+    inset -1px -1px 0 var(--win95-window-border-light);
+  border: var(--border-win95) solid var(--win95-window-border-light);
+}
+
+.win95-button:focus {
+  outline: 1px dotted var(--win95-black);
+  outline-offset: -4px;
+}
+
+.win95-button-disabled {
+  background-color: var(--win95-silver);
+  color: var(--win95-disabled-text);
+  cursor: default;
+}
+
+.win95-button-disabled:hover {
+  background-color: var(--win95-silver);
+}
+
+.win95-button-disabled:active {
+  box-shadow: 
+    1px 1px 0 var(--win95-window-border-light),
+    -1px -1px 0 var(--win95-window-border-dark);
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+}
+
+/* Brutalist Button Variants */
+.win95-button-brutalist {
+  background-color: var(--win95-white);
+  border: var(--border-win95) solid var(--win95-black);
+  box-shadow: 
+    4px 4px 0 var(--win95-black);
+  padding: var(--padding-button);
+  font-family: var(--font-win95-arial);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--win95-black);
+  cursor: pointer;
+  outline: none;
+  margin: var(--spacing-sm);
+  transition: all 0.1s ease;
+}
+
+.win95-button-brutalist:hover {
+  background-color: var(--brutalist-yellow);
+  transform: translate(-2px, -2px);
+  box-shadow: 
+    6px 6px 0 var(--win95-black);
+}
+
+.win95-button-brutalist:active {
+  transform: translate(2px, 2px);
+  box-shadow: 
+    2px 2px 0 var(--win95-black);
+}
+
+.win95-button-brutalist-red {
+  background-color: var(--brutalist-red);
+  color: var(--win95-white);
+}
+
+.win95-button-brutalist-green {
+  background-color: var(--brutalist-green);
+  color: var(--win95-black);
+}
+
+.win95-button-brutalist-blue {
+  background-color: var(--win95-blue);
+  color: var(--win95-white);
+}
+
+/* Win95 Input Styles */
+.win95-input {
+  background-color: var(--win95-white);
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-window-border-light),
+    inset -1px -1px 0 var(--win95-window-border-dark);
+  padding: var(--padding-input);
+  font-family: var(--font-win95-ms-sans);
+  font-size: 16px;
+  color: var(--win95-text);
+  outline: none;
+}
+
+.win95-input:focus {
+  outline: 1px dotted var(--win95-black);
+  outline-offset: -2px;
+}
+
+.win95-input-disabled {
+  background-color: var(--win95-silver);
+  color: var(--win95-disabled-text);
+}
+
+/* Win95 Select Styles */
+.win95-select {
+  background-color: var(--win95-white);
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-window-border-light),
+    inset -1px -1px 0 var(--win95-window-border-dark);
+  padding: var(--padding-input);
+  font-family: var(--font-win95-ms-sans);
+  font-size: 16px;
+  color: var(--win95-text);
+  outline: none;
+  cursor: pointer;
+}
+
+.win95-select:focus {
+  outline: 1px dotted var(--win95-black);
+  outline-offset: -2px;
+}
+
+/* Win95 Checkbox and Radio Styles */
+.win95-checkbox, .win95-radio {
+  margin-right: var(--spacing-sm);
+}
+
+/* Win95 Table Styles */
+.win95-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-win95-ms-sans);
+  font-size: 16px;
+}
+
+.win95-table th, .win95-table td {
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  padding: var(--spacing-sm);
+  text-align: left;
+}
+
+.win95-table th {
+  background-color: var(--win95-silver);
+  font-weight: 700;
+}
+
+.win95-table tr:nth-child(even) {
+  background-color: var(--win95-white);
+}
+
+.win95-table tr:nth-child(odd) {
+  background-color: var(--win95-silver);
+}
+
+/* Brutalist Effects */
+.win95-scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, var(--scanline-opacity)) 51%
+  );
+  background-size: 100% 4px;
+}
+
+.win95-glitch {
+  position: relative;
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+.win95-text-shadow {
+  text-shadow: 
+    2px 2px 0 var(--win95-black),
+    4px 4px 0 var(--brutalist-red);
+}
+
+/* Utility Classes */
+.win95-border {
+  border: var(--border-win95) solid var(--win95-window-border-dark);
+  box-shadow: 
+    1px 1px 0 var(--win95-window-border-light),
+    -1px -1px 0 var(--win95-window-border-dark);
+}
+
+.win95-border-inset {
+  border: var(--border-win95) solid var(--win95-window-border-light);
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-window-border-dark),
+    inset -1px -1px 0 var(--win95-window-border-light);
+}
+
+.win95-brutalist-border {
+  border: var(--border-win95) solid var(--win95-black);
+  box-shadow: 
+    4px 4px 0 var(--win95-black);
+}
+
+.win95-bg-teal {
+  background-color: var(--win95-teal);
+}
+
+.win95-bg-gray {
+  background-color: var(--win95-gray);
+}
+
+.win95-bg-silver {
+  background-color: var(--win95-silver);
+}
+
+.win95-bg-white {
+  background-color: var(--win95-white);
+}
+
+.win95-bg-black {
+  background-color: var(--win95-black);
+}
+
+.win95-bg-blue {
+  background-color: var(--win95-blue);
+}
+
+.win95-bg-red {
+  background-color: var(--brutalist-red);
+}
+
+.win95-bg-yellow {
+  background-color: var(--brutalist-yellow);
+}
+
+.win95-bg-green {
+  background-color: var(--brutalist-green);
+}
+
+.win95-bg-magenta {
+  background-color: var(--brutalist-magenta);
+}
+
+.win95-text-teal {
+  color: var(--win95-teal);
+}
+
+.win95-text-gray {
+  color: var(--win95-gray);
+}
+
+.win95-text-silver {
+  color: var(--win95-silver);
+}
+
+.win95-text-white {
+  color: var(--win95-white);
+}
+
+.win95-text-black {
+  color: var(--win95-black);
+}
+
+.win95-text-blue {
+  color: var(--win95-blue);
+}
+
+.win95-text-red {
+  color: var(--brutalist-red);
+}
+
+.win95-text-yellow {
+  color: var(--brutalist-yellow);
+}
+
+.win95-text-green {
+  color: var(--brutalist-green);
+}
+
+.win95-text-magenta {
+  color: var(--brutalist-magenta);
+}
+
+/* Spacing Utilities */
+.win95-m-xs { margin: var(--spacing-xs); }
+.win95-m-sm { margin: var(--spacing-sm); }
+.win95-m-md { margin: var(--spacing-md); }
+.win95-m-lg { margin: var(--spacing-lg); }
+.win95-m-xl { margin: var(--spacing-xl); }
+.win95-m-2xl { margin: var(--spacing-2xl); }
+.win95-m-3xl { margin: var(--spacing-3xl); }
+
+.win95-p-xs { padding: var(--spacing-xs); }
+.win95-p-sm { padding: var(--spacing-sm); }
+.win95-p-md { padding: var(--spacing-md); }
+.win95-p-lg { padding: var(--spacing-lg); }
+.win95-p-xl { padding: var(--spacing-xl); }
+.win95-p-2xl { padding: var(--spacing-2xl); }
+.win95-p-3xl { padding: var(--spacing-3xl); }
+
+.win95-mt-xs { margin-top: var(--spacing-xs); }
+.win95-mt-sm { margin-top: var(--spacing-sm); }
+.win95-mt-md { margin-top: var(--spacing-md); }
+.win95-mt-lg { margin-top: var(--spacing-lg); }
+.win95-mt-xl { margin-top: var(--spacing-xl); }
+.win95-mt-2xl { margin-top: var(--spacing-2xl); }
+.win95-mt-3xl { margin-top: var(--spacing-3xl); }
+
+.win95-mb-xs { margin-bottom: var(--spacing-xs); }
+.win95-mb-sm { margin-bottom: var(--spacing-sm); }
+.win95-mb-md { margin-bottom: var(--spacing-md); }
+.win95-mb-lg { margin-bottom: var(--spacing-lg); }
+.win95-mb-xl { margin-bottom: var(--spacing-xl); }
+.win95-mb-2xl { margin-bottom: var(--spacing-2xl); }
+.win95-mb-3xl { margin-bottom: var(--spacing-3xl); }
+
+.win95-ml-xs { margin-left: var(--spacing-xs); }
+.win95-ml-sm { margin-left: var(--spacing-sm); }
+.win95-ml-md { margin-left: var(--spacing-md); }
+.win95-ml-lg { margin-left: var(--spacing-lg); }
+.win95-ml-xl { margin-left: var(--spacing-xl); }
+.win95-ml-2xl { margin-left: var(--spacing-2xl); }
+.win95-ml-3xl { margin-left: var(--spacing-3xl); }
+
+.win95-mr-xs { margin-right: var(--spacing-xs); }
+.win95-mr-sm { margin-right: var(--spacing-sm); }
+.win95-mr-md { margin-right: var(--spacing-md); }
+.win95-mr-lg { margin-right: var(--spacing-lg); }
+.win95-mr-xl { margin-right: var(--spacing-xl); }
+.win95-mr-2xl { margin-right: var(--spacing-2xl); }
+.win95-mr-3xl { margin-right: var(--spacing-3xl); }
+
+.win95-pt-xs { padding-top: var(--spacing-xs); }
+.win95-pt-sm { padding-top: var(--spacing-sm); }
+.win95-pt-md { padding-top: var(--spacing-md); }
+.win95-pt-lg { padding-top: var(--spacing-lg); }
+.win95-pt-xl { padding-top: var(--spacing-xl); }
+.win95-pt-2xl { padding-top: var(--spacing-2xl); }
+.win95-pt-3xl { padding-top: var(--spacing-3xl); }
+
+.win95-pb-xs { padding-bottom: var(--spacing-xs); }
+.win95-pb-sm { padding-bottom: var(--spacing-sm); }
+.win95-pb-md { padding-bottom: var(--spacing-md); }
+.win95-pb-lg { padding-bottom: var(--spacing-lg); }
+.win95-pb-xl { padding-bottom: var(--spacing-xl); }
+.win95-pb-2xl { padding-bottom: var(--spacing-2xl); }
+.win95-pb-3xl { padding-bottom: var(--spacing-3xl); }
+
+.win95-pl-xs { padding-left: var(--spacing-xs); }
+.win95-pl-sm { padding-left: var(--spacing-sm); }
+.win95-pl-md { padding-left: var(--spacing-md); }
+.win95-pl-lg { padding-left: var(--spacing-lg); }
+.win95-pl-xl { padding-left: var(--spacing-xl); }
+.win95-pl-2xl { padding-left: var(--spacing-2xl); }
+.win95-pl-3xl { padding-left: var(--spacing-3xl); }
+
+.win95-pr-xs { padding-right: var(--spacing-xs); }
+.win95-pr-sm { padding-right: var(--spacing-sm); }
+.win95-pr-md { padding-right: var(--spacing-md); }
+.win95-pr-lg { padding-right: var(--spacing-lg); }
+.win95-pr-xl { padding-right: var(--spacing-xl); }
+.win95-pr-2xl { padding-right: var(--spacing-2xl); }
+.win95-pr-3xl { padding-right: var(--spacing-3xl); }

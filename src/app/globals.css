@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './win95-brutalist.css';
+@import './typography-extensions.css';
+
+:root {
+  --radius: 1rem;
+  /* Win95 Brutalist Theme Colors - Default */
+  --background-primary: #008080; /* Win95 Teal */
+  --text-primary: #000000; /* Win95 Black */
+  --surface-card: #C0C0C0; /* Win95 Silver */
+  
+  /* HSL values for Tailwind integration - Win95 Theme */
+  --background: #008080; /* Win95 Teal */
+  --foreground: #000000; /* Win95 Black */
+  --card: #C0C0C0; /* Win95 Silver */
+  --card-foreground: #000000; /* Win95 Black */
+  --popover: #C0C0C0; /* Win95 Silver */
+  --popover-foreground: #000000; /* Win95 Black */
+  --primary: #0000FF; /* Win95 Blue */
+  --primary-foreground: #FFFFFF; /* Win95 White */
+  --secondary: #C0C0C0; /* Win95 Silver */
+  --secondary-foreground: #000000; /* Win95 Black */
+  --muted: #808080; /* Win95 Gray */
+  --muted-foreground: #FFFFFF; /* Win95 White */
+  --accent: #FF0000; /* Brutalist Red */
+  --accent-foreground: #FFFFFF; /* Win95 White */
+  --destructive: #FF0000; /* Brutalist Red */
+  --border: #000000; /* Win95 Black */
+  --input: #FFFFFF; /* Win95 White */
+  --ring: #0000FF; /* Win95 Blue */
+  --chart-1: #000000; /* Win95 Black */
+  --chart-2: #008080; /* Win95 Teal */
+  --chart-3: #C0C0C0; /* Win95 Silver */
+  --chart-4: #808080; /* Win95 Gray */
+  --chart-5: #FF0000; /* Brutalist Red */
+  --sidebar: #C0C0C0; /* Win95 Silver */
+  --sidebar-foreground: #000000; /* Win95 Black */
+  --sidebar-primary: #000000; /* Win95 Black */
+  --sidebar-primary-foreground: #FFFFFF; /* Win95 White */
+  --sidebar-accent: #0000FF; /* Win95 Blue */
+  --sidebar-accent-foreground: #FFFFFF; /* Win95 White */
+  --sidebar-border: #000000; /* Win95 Black */
+  --sidebar-ring: #0000FF; /* Win95 Blue */
+  
+  /* Win95 Font variables */
+  --font-heading: 'Arial', sans-serif;
+  --font-body: 'MS Sans Serif', 'Arial', sans-serif;
+  
+  /* Win95 Spacing System */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+}
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    background-color: var(--win95-teal);
+    font-family: var(--font-win95-ms-sans);
+    color: var(--win95-text);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+    font-family: var(--font-win95-arial);
+    text-transform: uppercase;
+  }
+  
+  /* Win95 Brutalist base styles */
+  .win95-brutalist body {
+    background-color: var(--win95-bg);
+    font-family: var(--font-win95-ms-sans);
+    color: var(--win95-text);
+  }
+  
+  /* Default to Win95 styles */
+  body {
+    background-color: var(--win95-teal);
+    font-family: var(--font-win95-ms-sans);
+    color: var(--win95-text);
+  }
+}
+
+@layer utilities {
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  
+  /* Win95 Typography Utilities */
+  .font-win95-arial {
+    font-family: var(--font-win95-arial);
+  }
+  
+  .font-win95-ms-sans {
+    font-family: var(--font-win95-ms-sans);
+  }
+  
+  .font-win95-courier {
+    font-family: var(--font-win95-courier);
+  }
+  
+  /* Win95 Spacing Utilities */
+  .win95-m-xs { margin: var(--spacing-xs); }
+  .win95-m-sm { margin: var(--spacing-sm); }
+  .win95-m-md { margin: var(--spacing-md); }
+  .win95-m-lg { margin: var(--spacing-lg); }
+  .win95-m-xl { margin: var(--spacing-xl); }
+  .win95-m-2xl { margin: var(--spacing-2xl); }
+  .win95-m-3xl { margin: var(--spacing-3xl); }
+  
+  .win95-p-xs { padding: var(--spacing-xs); }
+  .win95-p-sm { padding: var(--spacing-sm); }
+  .win95-p-md { padding: var(--spacing-md); }
+  .win95-p-lg { padding: var(--spacing-lg); }
+  .win95-p-xl { padding: var(--spacing-xl); }
+  .win95-p-2xl { padding: var(--spacing-2xl); }
+  .win95-p-3xl { padding: var(--spacing-3xl); }
+}
+
+/* Performance optimizations */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Prevent layout shift */
+.aspect-ratio {
+  @apply aspect-video;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Article content styling */
+.article-content {
+  /* Headings */
+  h1 {
+    @apply text-3xl font-bold mb-6 mt-8;
+    color: hsl(var(--primary));
+  }
+  
+  h2 {
+    @apply text-2xl font-bold mb-4 mt-6;
+    color: hsl(var(--primary));
+  }
+  
+  h3 {
+    @apply text-xl font-semibold mb-3 mt-5;
+    color: hsl(var(--primary));
+  }
+  
+  h4 {
+    @apply text-lg font-semibold mb-2 mt-4;
+    color: hsl(var(--primary));
+  }
+  
+  /* Paragraphs */
+  p {
+    @apply mb-4 leading-relaxed;
+    color: hsl(var(--foreground));
+  }
+  
+  /* Lists */
+  ul, ol {
+    @apply mb-4 ml-6;
+    color: hsl(var(--foreground));
+  }
+  
+  li {
+    @apply mb-2;
+  }
+  
+  ul li {
+    @apply list-disc;
+  }
+  
+  ol li {
+    @apply list-decimal;
+  }
+  
+  /* Text formatting */
+  strong {
+    @apply font-bold;
+    color: hsl(var(--primary));
+  }
+  
+  em {
+    @apply italic;
+  }
+  
+  /* Links */
+  a {
+    @apply underline;
+    color: hsl(var(--primary));
+  }
+  
+  a:hover {
+    color: hsl(var(--primary) / 0.8);
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 pl-4 italic my-4;
+    border-color: hsl(var(--primary) / 0.3);
+    color: hsl(var(--muted-foreground));
+  }
+  
+  /* Code */
+  code {
+    @apply px-2 py-1 rounded text-sm font-mono;
+    background-color: hsl(var(--muted));
+    color: hsl(var(--primary));
+  }
+  
+  pre {
+    @apply p-4 rounded-lg overflow-x-auto my-4;
+    background-color: hsl(var(--muted));
+    color: hsl(var(--foreground));
+  }
+  
+  pre code {
+    @apply bg-transparent p-0;
+  }
+  
+  /* Images */
+  img {
+    @apply rounded-lg my-4;
+  }
+  
+  /* Tables */
+  table {
+    @apply w-full border-collapse border my-4;
+    border-color: hsl(var(--border));
+  }
+  
+  th, td {
+    @apply border px-4 py-2 text-left;
+    border-color: hsl(var(--border));
+  }
+  
+  th {
+    @apply font-semibold;
+    background-color: hsl(var(--muted));
+    color: hsl(var(--primary));
+  }
+  
+  td {
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Loading states */
+.skeleton {
+  @apply animate-pulse rounded;
+  background-color: hsl(var(--muted));
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    @apply hidden;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .article-content {
+    color: #000000;
+  }
+  
+  .article-content h1,
+  .article-content h2,
+  .article-content h3,
+  .article-content h4,
+  .article-content strong {
+    color: #000000;
+  }
+}

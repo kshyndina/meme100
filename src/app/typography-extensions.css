@@ -1,0 +1,247 @@
+/* Win95 Brutalist Typography Extensions */
+
+/* Glitch animation for H1 headings */
+@keyframes glitch {
+  0%, 100% { 
+    transform: translate(0);
+    text-shadow: 
+      2px 2px 0 #FF0000,
+      4px 4px 0 #FFFF00;
+  }
+  20% { 
+    transform: translate(-2px, 2px);
+    text-shadow: 
+      -2px 2px 0 #FF00FF,
+      2px -2px 0 #00FF00;
+  }
+  40% { 
+    transform: translate(-2px, -2px);
+    text-shadow: 
+      2px -2px 0 #0000FF,
+      -2px 2px 0 #FFFF00;
+  }
+  60% { 
+    transform: translate(2px, 2px);
+    text-shadow: 
+      -2px -2px 0 #FF0000,
+      2px 2px 0 #00FF00;
+  }
+  80% { 
+    transform: translate(2px, -2px);
+    text-shadow: 
+      2px 2px 0 #FF00FF,
+      -2px -2px 0 #0000FF;
+  }
+}
+
+.animate-glitch {
+  animation: glitch 2s infinite;
+}
+
+/* Text shadow effects for brutalist headlines */
+.text-shadow-brutalist-h1 {
+  text-shadow: 
+    2px 2px 0 #FF0000,
+    4px 4px 0 #FFFF00;
+}
+
+.text-shadow-brutalist-h2 {
+  text-shadow: 
+    1px 1px 0 #00FF00,
+    2px 2px 0 #FF00FF;
+}
+
+.text-shadow-brutalist-h3 {
+  text-shadow: 1px 1px 0 #FF0000;
+}
+
+/* Letter spacing and line height utilities */
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-normal {
+  letter-spacing: 0;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+/* Responsive typography breakpoints */
+@media (max-width: 640px) {
+  .responsive-h1 {
+    font-size: 48px;
+  }
+  
+  .responsive-h2 {
+    font-size: 36px;
+  }
+  
+  .responsive-h3 {
+    font-size: 20px;
+  }
+  
+  .responsive-body {
+    font-size: 12px;
+  }
+  
+  .responsive-small {
+    font-size: 10px;
+  }
+  
+  .responsive-tiny {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .responsive-h1 {
+    font-size: 60px;
+  }
+  
+  .responsive-h2 {
+    font-size: 42px;
+  }
+  
+  .responsive-h3 {
+    font-size: 22px;
+  }
+  
+  .responsive-body {
+    font-size: 13px;
+  }
+  
+  .responsive-small {
+    font-size: 10px;
+  }
+  
+  .responsive-tiny {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .responsive-h1 {
+    font-size: 72px;
+  }
+  
+  .responsive-h2 {
+    font-size: 48px;
+  }
+  
+  .responsive-h3 {
+    font-size: 24px;
+  }
+  
+  .responsive-body {
+    font-size: 14px;
+  }
+  
+  .responsive-small {
+    font-size: 11px;
+  }
+  
+  .responsive-tiny {
+    font-size: 9px;
+  }
+}
+
+/* Font family utilities */
+.font-arial-black {
+  font-family: 'Arial Black', 'Arial', sans-serif;
+}
+
+.font-arial {
+  font-family: 'Arial', sans-serif;
+}
+
+.font-ms-sans-serif {
+  font-family: 'MS Sans Serif', 'Arial', sans-serif;
+}
+
+/* Text transformation utilities */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.normal-case {
+  text-transform: none;
+}
+
+/* Underline utilities */
+.underline {
+  text-decoration: underline;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+/* Border utilities for H2 */
+.border-b-4 {
+  border-bottom: 4px solid;
+}
+
+.border-black {
+  border-color: #000000;
+}
+
+/* Hover effects for H3 */
+.hover-bg-blue-500:hover {
+  background-color: #0000FF;
+}
+
+.hover-text-white:hover {
+  color: #FFFFFF;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
