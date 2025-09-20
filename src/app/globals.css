@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './win95-brutalist.css';
 @import './typography-extensions.css';
 
 :root {
@@ -45,8 +44,8 @@
   --sidebar-ring: #0000FF; /* Win95 Blue */
   
   /* Win95 Font variables */
-  --font-heading: 'Arial', sans-serif;
-  --font-body: 'MS Sans Serif', 'Arial', sans-serif;
+  --font-heading: var(--font-syne), 'Arial', sans-serif;
+  --font-body: var(--font-inter), 'MS Sans Serif', 'Arial', sans-serif;
   
   /* Win95 Spacing System */
   --spacing-xs: 4px;

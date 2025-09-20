@@ -77,7 +77,7 @@ export function Footer() {
     <footer className="border-t-2 border-gray-500 bg-[#c0c0c0] shadow-[1px_1px_0_#ffffff,-1px_-1px_0_#000000]">
       <div className="container mx-auto px-4 py-4">
         <Win95Window
-          title="Degen News Footer"
+          title="M100X Footer"
           className="w-full"
           initialX={0}
           initialY={0}
@@ -89,10 +89,10 @@ export function Footer() {
           <div className="p-4">
             <div className="text-center">
               <Small className="text-black font-win95-ms-sans">
-                © 2025 Degen News. All rights reserved.
+                © 2025 M100X. All rights reserved.
               </Small>
               <Small className="text-black font-win95-ms-sans mt-2 block">
-                Degen News is not responsible for the content of external sites.
+                M100X is not responsible for the content of external sites.
               </Small>
 
               <div className="mt-4 flex justify-center">

@@ -195,10 +195,10 @@ export function ArticleDetail({ article }: ArticleDetailProps) {
                 <Win95Card>
                   <Win95CardContent>
                     <Win95CardTitle className="text-black text-base font-bold mb-2">
-                      What is Degen News?
+                      What is M100X?
                     </Win95CardTitle>
                     <p className="font-win95-ms-sans text-black text-sm">
-                      Degen News is a leading independent news publication
+                      M100X is a leading independent news publication
                       covering the non-custodial cryptocurrency ecosystem, DeFi
                       protocols, decentralized exchanges, and the broader
                       self-custody movement. We provide in-depth analysis,
@@ -211,7 +211,7 @@ export function ArticleDetail({ article }: ArticleDetailProps) {
                 <Win95Card>
                   <Win95CardContent>
                     <Win95CardTitle className="text-black text-base font-bold mb-2">
-                      Who writes for Degen News?
+                      Who writes for M100X?
                     </Win95CardTitle>
                     <p className="font-win95-ms-sans text-black text-sm">
                       Our team consists of experienced cryptocurrency

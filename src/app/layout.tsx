@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Syne, Inter } from "next/font/google";
 import "./globals.css";
 import "./win95-animations.css";
+import "./win95-brutalist.css";
 import { Toaster } from "@/components/ui/toaster";
 import { SEO } from "@/components/seo/SEO";
 import { StructuredData } from "@/components/seo/StructuredData";
@@ -32,20 +33,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Degen News - Crypto Security News",
+  title: "M100X - Crypto Security News",
   description: "Minimalistic crypto security news website covering hacks, scams, and security incidents in the cryptocurrency space",
   keywords: ["crypto", "security", "hacks", "scams", "blockchain", "bitcoin", "ethereum"],
-  authors: [{ name: "Degen News" }],
+  authors: [{ name: "M100X" }],
   openGraph: {
-    title: "Degen News - Crypto Security News",
+    title: "M100X - Crypto Security News",
     description: "Minimalistic crypto security news website covering hacks, scams, and security incidents",
     url: "https://degennews.com",
-    siteName: "Degen News",
+    siteName: "M100X",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Degen News - Crypto Security News",
+    title: "M100X - Crypto Security News",
     description: "Minimalistic crypto security news website covering hacks, scams, and security incidents",
   },
 };
@@ -75,16 +76,9 @@ export default function RootLayout({
         {/* Preload key assets */}
         <link rel="preload" href="/memecoin100x_logo.jpg" as="image" type="image/jpeg" />
         <link
-          rel="preload"
+          rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
-          as="style"
         />
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
-          />
-        </noscript>
         
         {/* Performance hints */}
         <meta httpEquiv="X-DNS-Prefetch-Control" content="on" />
@@ -92,7 +86,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
         {/* Security headers */}
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
         

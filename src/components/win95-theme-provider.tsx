@@ -29,13 +29,6 @@ export const Win95ThemeProvider: React.FC<Win95ThemeProviderProps> = ({ children
     // Always apply Win95 theme
     document.body.classList.add('win95-brutalist');
     
-    // Load the Win95 Brutalist CSS
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/win95-brutalist.css';
-    link.id = 'win95-brutalist-stylesheet';
-    document.head.appendChild(link);
-    
     // Add scanlines effect
     const scanlines = document.createElement('div');
     scanlines.className = 'win95-scanlines';
@@ -44,11 +37,6 @@ export const Win95ThemeProvider: React.FC<Win95ThemeProviderProps> = ({ children
     
     // Clean up function to remove elements when component unmounts
     return () => {
-      const existingLink = document.getElementById('win95-brutalist-stylesheet');
-      if (existingLink) {
-        existingLink.remove();
-      }
-      
       const existingScanlines = document.getElementById('win95-scanlines');
       if (existingScanlines) {
         existingScanlines.remove();

@@ -17,7 +17,7 @@ export default async function Home() {
   const homepageStructuredData = {
     type: "webpage" as const,
     data: {
-      title: "Degen News - Crypto Security News & Trading Insights",
+      title: "M100X - Crypto Security News & Trading Insights",
       description:
         "Latest crypto security news, trading insights, whale watching strategies, and market analysis for degens.",
       path: "/",
@@ -38,7 +38,7 @@ export default async function Home() {
   return (
     <>
       <SEO
-        title="Degen News - Crypto Security News & Trading Insights"
+        title="M100X - Crypto Security News & Trading Insights"
         description="Latest crypto security news, trading insights, whale watching strategies, and market analysis for degens."
         structuredData={homepageStructuredData}
       />

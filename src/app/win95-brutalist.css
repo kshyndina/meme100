@@ -47,8 +47,8 @@
   --margin-section: 16px;
   
   /* Typography */
-  --font-win95-arial: 'Arial', sans-serif;
-  --font-win95-ms-sans: 'MS Sans Serif', 'Arial', sans-serif;
+  --font-win95-arial: var(--font-syne), 'Arial', sans-serif;
+  --font-win95-ms-sans: var(--font-inter), 'MS Sans Serif', 'Arial', sans-serif;
   --font-win95-courier: 'Courier New', monospace;
   
   /* Border widths */
