@@ -3,6 +3,7 @@ import { SEO } from "@/components/seo/SEO";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { googleSheetsService } from "@/lib/google/sheets";
 import { ArticleCard } from "@/components/news/ArticleCard";
+import { ArticleList } from "@/components/news/ArticleList";
 import { Article } from "@/types/article";
 import { H1, H2, Body } from "@/components/ui/typography";
 
@@ -122,52 +123,26 @@ export default async function Home() {
                   </div>
                 )}
               </div>
-              
-              {/* Additional articles grid to ensure at least 12 articles before "You might also like" */}
-              <div className="win95-additional-articles">
-                {articles.slice(5, 12).map((article, index) => (
-                  <div
-                    key={article.id}
-                    className={`win95-article-card ${
-                      index % 3 === 0
-                        ? "win95-article-rotate-1"
-                        : index % 3 === 1
-                        ? "win95-article-rotate-2"
-                        : "win95-article-rotate-3"
-                    }`}
-                  >
-                    <ArticleCard
-                      article={article}
-                      href={`/articles/${article.url.split("/").pop()}`}
-                    />
-                  </div>
-                ))}
-              </div>
             </div>
           </section>
 
-          {/* "You might also like" section with Win95 styling */}
-          <section className="win95-recommended-section">
-            <div className="win95-recommended-divider"></div>
+          {/* All articles section with Win95 styling */}
+          <section className="win95-all-articles-section">
+            <div className="win95-all-articles-divider"></div>
 
-            <div className="win95-recommended-box">
-              <H2 responsive={true} className="win95-recommended-title">
-                You might also <span className="text-[#FF0000]">like...</span>
+            <div className="win95-all-articles-box">
+              <H2 responsive={true} className="win95-all-articles-title">
+                All <span className="text-[#FF0000]">Articles</span>
               </H2>
 
-              {/* Grid layout for recommended articles with Win95 styling */}
-              <div className="win95-recommended-grid">
-                {articles.slice(12, 15).map((article, index) => (
-                  <div
-                    key={article.id}
-                    className="win95-recommended-article"
-                  >
-                    <ArticleCard
-                      article={article}
-                      href={`/articles/${article.url.split("/").pop()}`}
-                    />
-                  </div>
-                ))}
+              {/* Use ArticleList component for all remaining articles */}
+              <div className="win95-all-articles-list">
+                <ArticleList
+                  articles={articles.slice(5)} // Skip the first 5 featured articles
+                  useLinks={true}
+                  layout="grid"
+                  responsive={true}
+                />
               </div>
             </div>
           </section>

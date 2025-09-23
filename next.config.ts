@@ -27,6 +27,14 @@ const nextConfig: NextConfig = {
         poll: 1000,
         aggregateTimeout: 300,
       };
+      
+      // Fix for WebSocket HMR connection issues
+      if (!isServer) {
+        config.optimization = {
+          ...config.optimization,
+          runtimeChunk: false,
+        };
+      }
     }
     
     return config;
@@ -43,6 +51,9 @@ const nextConfig: NextConfig = {
   // Fix for cross-origin requests in development
   allowedDevOrigins: [
     'preview-chat-a5b00827-c3bf-47fa-886f-a69d0d9bf8fa.space.z.ai',
+    'localhost',
+    '127.0.0.1',
+    '0.0.0.0',
   ],
   // Optimize images and static assets
   images: {
@@ -51,6 +62,29 @@ const nextConfig: NextConfig = {
   // Enable experimental features for better performance
   experimental: {
     optimizeCss: true,
+  },
+  // Headers configuration to ensure proper handling of Next.js internal resources
+  headers: async () => {
+    return [
+      {
+        source: '/__nextjs_original-stack-frames',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-cache, no-store, must-revalidate',
+          },
+        ],
+      },
+      {
+        source: '/__nextjs_font/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
   },
 };
 

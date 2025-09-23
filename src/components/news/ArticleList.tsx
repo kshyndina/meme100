@@ -48,7 +48,7 @@ export function ArticleList({
             <ArticleCard
               key={article.id}
               article={article}
-              onClick={() => onArticleClick?.(article)}
+              onClick={onArticleClick ? () => onArticleClick(article) : undefined}
               href={useLinks ? `/articles/${article.url.split('/').pop()}` : undefined}
             />
           ))}
@@ -68,7 +68,7 @@ export function ArticleList({
                 "bg-white border border-t-white border-l-white border-b-black border-r-black p-3 cursor-pointer hover:bg-[#f0f0f0]",
                 responsive ? "p-3 sm:p-4" : "p-3"
               )}
-              onClick={() => onArticleClick?.(article)}
+              onClick={onArticleClick ? () => onArticleClick(article) : undefined}
             >
               <h3 className={cn(
                 "font-win95-ms-sans text-black font-bold mb-1",

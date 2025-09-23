@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
-import { Win95Window } from "./win95-window";
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -64,10 +63,13 @@ export function Win95MobileDrawer({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-end">
+    <>
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black bg-opacity-50 transition-opacity"
+        className={cn(
+          "win95-mobile-drawer-backdrop",
+          isOpen && "open"
+        )}
         onClick={onClose}
       />
       
@@ -75,30 +77,29 @@ export function Win95MobileDrawer({
       <div
         ref={drawerRef}
         className={cn(
-          "relative w-full max-w-md h-full bg-[#c0c0c0] shadow-lg transform transition-transform duration-300 ease-in-out",
-          "border-l-2 border-t-0 border-b-0 border-r-0 border-gray-500",
+          "win95-mobile-drawer",
+          isOpen && "open",
           className
         )}
       >
-        <Win95Window
-          title={title}
-          onClose={onClose}
-          minimizable={true}
-          maximizable={true}
-          closable={true}
-          resizable={true}
-          initialX={0}
-          initialY={0}
-          defaultWidth={window.innerWidth}
-          defaultHeight={window.innerHeight}
-          className="absolute inset-0 w-full h-full"
-        >
-          <div className="p-4 h-full overflow-y-auto">
-            {children}
-          </div>
-        </Win95Window>
+        {/* Drawer Header */}
+        <div className="win95-mobile-drawer-header">
+          <div className="win95-mobile-drawer-title">{title}</div>
+          <button
+            className="win95-mobile-drawer-close"
+            onClick={onClose}
+          >
+            <div className="bg-[#000000] absolute transform rotate-45 w-3 h-0.5"></div>
+            <div className="bg-[#000000] absolute transform -rotate-45 w-3 h-0.5"></div>
+          </button>
+        </div>
+        
+        {/* Drawer Content */}
+        <div className="win95-mobile-drawer-content">
+          {children}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -122,19 +123,8 @@ export function DrawerNavigationItem({
       href={href}
       onClick={onClick}
       className={cn(
-        // Base styles
-        "block w-full px-4 py-3 text-left text-sm font-medium transition-all duration-200",
-        // Win95 3D border effect
-        "border-2 border-t-white border-l-white border-b-gray-500 border-r-gray-500",
-        "bg-[#c0c0c0] text-black mb-2",
-        // Hover effect
-        "hover:bg-[#c0c0c0] hover:border-t-gray-500 hover:border-l-gray-500 hover:border-b-white hover:border-r-white",
-        // Active effect
-        "active:border-t-gray-500 active:border-l-gray-500 active:border-b-white active:border-r-white active:top-[1px] active:left-[1px]",
-        // Focus effect
-        "focus:outline focus:outline-1 focus:outline-dotted focus:outline-black",
-        // Active state
-        isActive && "bg-[#000080] text-white",
+        "win95-mobile-drawer-nav-item",
+        isActive && "active",
         className
       )}
     >

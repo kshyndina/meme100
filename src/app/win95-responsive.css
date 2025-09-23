@@ -734,6 +734,162 @@
     right: var(--mobile-spacing-sm);
     z-index: 1001;
   }
+  
+  /* Mobile Header Styles */
+  .mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #808080;
+    border-right-color: #808080;
+    padding: var(--mobile-spacing-sm);
+  }
+  
+  /* Mobile Drawer Styles */
+  .win95-mobile-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 300px;
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-top-color: #ffffff;
+    border-left-color: #808080;
+    border-bottom-color: #808080;
+    border-right-color: #808080;
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .win95-mobile-drawer.open {
+    transform: translateX(0);
+  }
+  
+  .win95-mobile-drawer-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .win95-mobile-drawer-backdrop.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Mobile Drawer Header */
+  .win95-mobile-drawer-header {
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: white;
+    padding: var(--mobile-spacing-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .win95-mobile-drawer-title {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .win95-mobile-drawer-close {
+    background-color: #c0c0c0;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #000000;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /* Mobile Drawer Content */
+  .win95-mobile-drawer-content {
+    background-color: white;
+    border: 1px solid #808080;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: var(--mobile-spacing-md);
+    height: calc(100% - 32px); /* Subtract header height */
+    overflow-y: auto;
+  }
+  
+  /* Mobile Drawer Navigation Items */
+  .win95-mobile-drawer-nav-item {
+    display: block;
+    width: 100%;
+    padding: var(--mobile-spacing-md);
+    margin-bottom: var(--mobile-spacing-sm);
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #808080;
+    border-right-color: #808080;
+    color: black;
+    text-decoration: none;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease;
+  }
+  
+  .win95-mobile-drawer-nav-item:hover {
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+  }
+  
+  .win95-mobile-drawer-nav-item:active {
+    border: 2px solid;
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+    position: relative;
+    top: 1px;
+    left: 1px;
+  }
+  
+  .win95-mobile-drawer-nav-item.active {
+    background-color: #000080;
+    color: white;
+  }
+  
+  /* Mobile Drawer Category Label */
+  .win95-mobile-drawer-category-label {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    margin-top: var(--mobile-spacing-md);
+    margin-bottom: var(--mobile-spacing-sm);
+    padding-left: var(--mobile-spacing-xs);
+  }
 }
 
 @media (min-width: 768px) {
@@ -742,6 +898,13 @@
   }
   
   .win95-mobile-menu-button {
+    display: none;
+  }
+  
+  /* Hide mobile-specific elements on desktop */
+  .mobile-header,
+  .win95-mobile-drawer,
+  .win95-mobile-drawer-backdrop {
     display: none;
   }
 }
@@ -795,5 +958,84 @@
   /* Adjust spacing for touch */
   .win95-touch-spacing {
     margin: var(--mobile-spacing-md) 0;
+  }
+}
+
+/* All Articles Section Styles */
+.win95-all-articles-section {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  width: 100%;
+}
+
+.win95-all-articles-divider {
+  height: 2px;
+  background-color: var(--win95-black);
+  margin-bottom: var(--spacing-lg);
+}
+
+.win95-all-articles-box {
+  background-color: var(--win95-silver);
+  border: 2px solid var(--win95-black);
+  box-shadow:
+    1px 1px 0 var(--win95-white),
+    -1px -1px 0 var(--win95-gray);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.win95-all-articles-title {
+  font-family: var(--font-win95-arial);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  color: var(--win95-black);
+}
+
+.win95-all-articles-list {
+  width: 100%;
+}
+
+/* Mobile Responsive Styles for All Articles Section */
+@media (max-width: 767px) {
+  .win95-all-articles-section {
+    margin-top: var(--mobile-spacing-xl);
+    margin-bottom: var(--mobile-spacing-xl);
+  }
+  
+  .win95-all-articles-divider {
+    margin-bottom: var(--mobile-spacing-lg);
+  }
+  
+  .win95-all-articles-box {
+    padding: var(--mobile-spacing-md);
+    margin-bottom: var(--mobile-spacing-lg);
+  }
+  
+  .win95-all-articles-title {
+    font-size: var(--mobile-font-size-h2);
+    margin-bottom: var(--mobile-spacing-md);
+  }
+}
+
+/* Tablet Responsive Styles for All Articles Section */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .win95-all-articles-section {
+    margin-top: var(--tablet-spacing-xl);
+    margin-bottom: var(--tablet-spacing-xl);
+  }
+  
+  .win95-all-articles-divider {
+    margin-bottom: var(--tablet-spacing-lg);
+  }
+  
+  .win95-all-articles-box {
+    padding: var(--tablet-spacing-md);
+    margin-bottom: var(--tablet-spacing-lg);
+  }
+  
+  .win95-all-articles-title {
+    font-size: var(--tablet-font-size-h2);
+    margin-bottom: var(--tablet-spacing-md);
   }
 }
