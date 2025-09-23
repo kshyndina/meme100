@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface Win95WindowProps {
   title: string;
@@ -15,7 +16,6 @@ interface Win95WindowProps {
   minimizable?: boolean;
   maximizable?: boolean;
   closable?: boolean;
-  fullscreenOnMobile?: boolean;
   onClose?: () => void;
   onMinimize?: () => void;
   onMaximize?: () => void;
@@ -33,58 +33,45 @@ export function Win95Window({
   minimizable = true,
   maximizable = true,
   closable = true,
-  fullscreenOnMobile = false,
   onClose,
   onMinimize,
   onMaximize,
 }: Win95WindowProps) {
   const [position, setPosition] = useState({ x: initialX, y: initialY });
-  const [size, setSize] = useState({ width: defaultWidth, height: defaultHeight });
+  const [size, setSize] = useState({
+    width: defaultWidth,
+    height: defaultHeight,
+  });
   const [isDragging, setIsDragging] = useState(false);
   const [isResizing, setIsResizing] = useState(false);
   const [resizeDirection, setResizeDirection] = useState("");
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [isMaximized, setIsMaximized] = useState(false);
-  const [originalSize, setOriginalSize] = useState({ width: defaultWidth, height: defaultHeight });
-  
+  const [originalSize, setOriginalSize] = useState({
+    width: defaultWidth,
+    height: defaultHeight,
+  });
+
+  const isMobile = useIsMobile();
+
   const windowRef = useRef<HTMLDivElement>(null);
   const dragStartPos = useRef({ x: 0, y: 0 });
   const resizeStartPos = useRef({ x: 0, y: 0, width: 0, height: 0 });
 
-  // Check if we're on mobile
-  useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-      
-      // Auto-fullscreen on mobile if enabled
-      if (window.innerWidth < 768 && fullscreenOnMobile) {
-        setIsFullscreen(true);
-      } else if (window.innerWidth >= 768 && isFullscreen) {
-        setIsFullscreen(false);
-      }
-    };
-
-    // Initial check
-    checkIsMobile();
-    
-    // Add resize listener
-    window.addEventListener('resize', checkIsMobile);
-    
-    return () => {
-      window.removeEventListener('resize', checkIsMobile);
-    };
-  }, [fullscreenOnMobile, isFullscreen]);
+  // Removed mobile-specific code as part of making the site static
 
   // Handle dragging
   const handleMouseDown = (e: React.MouseEvent) => {
-    if (e.target instanceof HTMLElement && e.target.closest(".win95-window-controls")) {
+    if (
+      e.target instanceof HTMLElement &&
+      e.target.closest(".win95-window-controls")
+    ) {
       return;
     }
     // Don't allow dragging when in fullscreen mode
     if (isFullscreen) return;
-    
+
     setIsDragging(true);
     dragStartPos.current = {
       x: e.clientX - position.x,
@@ -92,48 +79,16 @@ export function Win95Window({
     };
   };
 
-  // Handle touch start for dragging
-  const handleTouchStart = (e: React.TouchEvent) => {
-    if (e.target instanceof HTMLElement && e.target.closest(".win95-window-controls")) {
-      return;
-    }
-    // Don't allow dragging when in fullscreen mode
-    if (isFullscreen) return;
-    
-    setIsDragging(true);
-    const touch = e.touches[0];
-    dragStartPos.current = {
-      x: touch.clientX - position.x,
-      y: touch.clientY - position.y,
-    };
-  };
-
   // Handle resize start
   const handleResizeMouseDown = (direction: string, e: React.MouseEvent) => {
     e.stopPropagation();
     if (!resizable || isFullscreen) return;
-    
+
     setIsResizing(true);
     setResizeDirection(direction);
     resizeStartPos.current = {
       x: e.clientX,
       y: e.clientY,
-      width: size.width,
-      height: size.height,
-    };
-  };
-
-  // Handle touch start for resizing
-  const handleResizeTouchStart = (direction: string, e: React.TouchEvent) => {
-    e.stopPropagation();
-    if (!resizable || isFullscreen) return;
-    
-    setIsResizing(true);
-    setResizeDirection(direction);
-    const touch = e.touches[0];
-    resizeStartPos.current = {
-      x: touch.clientX,
-      y: touch.clientY,
       width: size.width,
       height: size.height,
     };
@@ -150,72 +105,12 @@ export function Win95Window({
       } else if (isResizing) {
         const deltaX = e.clientX - resizeStartPos.current.x;
         const deltaY = e.clientY - resizeStartPos.current.y;
-        
-        let newWidth = resizeStartPos.current.width;
-        let newHeight = resizeStartPos.current.height;
-        let newX = position.x;
-        let newY = position.y;
-        
-        if (resizeDirection.includes("e")) {
-          newWidth = Math.max(200, resizeStartPos.current.width + deltaX);
-        }
-        if (resizeDirection.includes("w")) {
-          newWidth = Math.max(200, resizeStartPos.current.width - deltaX);
-          newX = position.x + deltaX;
-        }
-        if (resizeDirection.includes("s")) {
-          newHeight = Math.max(150, resizeStartPos.current.height + deltaY);
-        }
-        if (resizeDirection.includes("n")) {
-          newHeight = Math.max(150, resizeStartPos.current.height - deltaY);
-          newY = position.y + deltaY;
-        }
-        
-        // Special handling for corner resizing to ensure smooth behavior
-        if (resizeDirection === "ne") {
-          // When resizing from top-right, only adjust height and Y position, not X position
-          newWidth = Math.max(200, resizeStartPos.current.width + deltaX);
-          newHeight = Math.max(150, resizeStartPos.current.height - deltaY);
-          newY = position.y + deltaY;
-        } else if (resizeDirection === "nw") {
-          // When resizing from top-left, adjust both dimensions and position
-          newWidth = Math.max(200, resizeStartPos.current.width - deltaX);
-          newHeight = Math.max(150, resizeStartPos.current.height - deltaY);
-          newX = position.x + deltaX;
-          newY = position.y + deltaY;
-        } else if (resizeDirection === "se") {
-          // When resizing from bottom-right, only adjust dimensions, not position
-          newWidth = Math.max(200, resizeStartPos.current.width + deltaX);
-          newHeight = Math.max(150, resizeStartPos.current.height + deltaY);
-        } else if (resizeDirection === "sw") {
-          // When resizing from bottom-left, adjust width and X position
-          newWidth = Math.max(200, resizeStartPos.current.width - deltaX);
-          newHeight = Math.max(150, resizeStartPos.current.height + deltaY);
-          newX = position.x + deltaX;
-        }
-        
-        setSize({ width: newWidth, height: newHeight });
-        setPosition({ x: newX, y: newY });
-      }
-    };
 
-    const handleTouchMove = (e: TouchEvent) => {
-      if (isDragging) {
-        const touch = e.touches[0];
-        setPosition({
-          x: touch.clientX - dragStartPos.current.x,
-          y: touch.clientY - dragStartPos.current.y,
-        });
-      } else if (isResizing) {
-        const touch = e.touches[0];
-        const deltaX = touch.clientX - resizeStartPos.current.x;
-        const deltaY = touch.clientY - resizeStartPos.current.y;
-        
         let newWidth = resizeStartPos.current.width;
         let newHeight = resizeStartPos.current.height;
         let newX = position.x;
         let newY = position.y;
-        
+
         if (resizeDirection.includes("e")) {
           newWidth = Math.max(200, resizeStartPos.current.width + deltaX);
         }
@@ -230,7 +125,7 @@ export function Win95Window({
           newHeight = Math.max(150, resizeStartPos.current.height - deltaY);
           newY = position.y + deltaY;
         }
-        
+
         // Special handling for corner resizing to ensure smooth behavior
         if (resizeDirection === "ne") {
           // When resizing from top-right, only adjust height and Y position, not X position
@@ -253,7 +148,7 @@ export function Win95Window({
           newHeight = Math.max(150, resizeStartPos.current.height + deltaY);
           newX = position.x + deltaX;
         }
-        
+
         setSize({ width: newWidth, height: newHeight });
         setPosition({ x: newX, y: newY });
       }
@@ -266,16 +161,12 @@ export function Win95Window({
 
     if (isDragging || isResizing) {
       document.addEventListener("mousemove", handleMouseMove);
-      document.addEventListener("touchmove", handleTouchMove, { passive: false });
       document.addEventListener("mouseup", handleMouseUp);
-      document.addEventListener("touchend", handleMouseUp);
     }
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("touchmove", handleTouchMove);
       document.removeEventListener("mouseup", handleMouseUp);
-      document.removeEventListener("touchend", handleMouseUp);
     };
   }, [isDragging, isResizing, position, resizeDirection]);
 
@@ -317,7 +208,7 @@ export function Win95Window({
   // Handle close button
   const handleClose = () => {
     // Return to homepage
-    window.location.href = '/';
+    window.location.href = "/";
     if (onClose) onClose();
   };
 
@@ -326,66 +217,47 @@ export function Win95Window({
       ref={windowRef}
       className={cn(
         "bg-[#c0c0c0] border-2 border-[#000000] shadow-[1px_1px_0_#ffffff,-1px_-1px_0_#000000] flex flex-col overflow-hidden",
-        isFullscreen ? "win95-window-mobile-fullscreen fixed inset-0 w-full h-full z-50 border-none rounded-none" : "absolute",
-        isMobile ? "win95-window-responsive" : "",
+        isFullscreen
+          ? "win95-window-mobile-fullscreen fixed inset-0 w-full h-full z-50 border-none rounded-none"
+          : isMobile
+            ? "win95-window-mobile-normal"
+            : "absolute",
         className
       )}
       style={{
         left: isFullscreen ? 0 : `${position.x}px`,
         top: isFullscreen ? 0 : `${position.y}px`,
-        width: isFullscreen ? '100%' : `${size.width}px`,
-        height: isFullscreen ? '100%' : `${size.height}px`,
+        width: isFullscreen ? "100%" : `${size.width}px`,
+        height: isFullscreen ? "100%" : `${size.height}px`,
         zIndex: isDragging || isResizing || isFullscreen ? 1000 : 100,
-        display: isMinimized && !isFullscreen ? 'flex' : 'flex',
+        display: isMinimized && !isFullscreen ? "flex" : "flex",
       }}
     >
       {/* Title Bar */}
       <div
         className={cn(
           "bg-gradient-to-r from-[#000080] to-[#1084d0] text-white flex items-center justify-between px-2 cursor-move select-none",
-          isMobile ? "h-8" : "h-6"
+          "h-6"
         )}
         onMouseDown={handleMouseDown}
-        onTouchStart={handleTouchStart}
       >
-        <div className={cn(
-          "font-win95-ms-sans truncate",
-          isMobile ? "text-base" : "text-sm"
-        )}>{title}</div>
-        
+        <div className={cn("font-win95-ms-sans truncate", "text-sm")}>
+          {title}
+        </div>
+
         {/* Window Controls */}
         <div className="flex win95-window-controls">
-          {/* Fullscreen toggle button (visible on mobile) */}
-          {isMobile && (
-            <button
-              className={cn(
-                "bg-[#c0c0c0] border border-[#000000] shadow-[1px_1px_0_#ffffff,-1px_-1px_0_#000000] flex items-center justify-center mx-0.5",
-                isMobile ? "w-6 h-6" : "w-5 h-5"
-              )}
-              onClick={toggleFullscreen}
-            >
-              {isFullscreen ? (
-                <div className="w-3 h-3 border border-[#000000]"></div>
-              ) : (
-                <div className="w-3 h-3 border border-[#000000] bg-[#000000] bg-opacity-20"></div>
-              )}
-            </button>
-          )}
-          
           {/* Always show minimize button */}
           <button
             className={cn(
               "bg-[#c0c0c0] border border-[#000000] shadow-[1px_1px_0_#ffffff,-1px_-1px_0_#000000] flex items-center justify-center mx-0.5",
-              isMobile ? "w-6 h-6 mobile-touch-friendly" : "w-5 h-5"
+              "w-5 h-5"
             )}
             onClick={handleMinimize}
           >
-            <div className={cn(
-              "bg-[#000000]",
-              isMobile ? "w-4 h-1" : "w-3 h-1"
-            )}></div>
+            <div className={cn("bg-[#000000]", "w-3 h-1")}></div>
           </button>
-          
+
           <button
             className={cn(
               "bg-[#c0c0c0] border border-[#000000] shadow-[1px_1px_0_#ffffff,-1px_-1px_0_#000000] flex items-center justify-center mx-0.5",
@@ -393,12 +265,14 @@ export function Win95Window({
             )}
             onClick={handleMaximize}
           >
-            <div className={cn(
-              "border border-[#000000]",
-              isMobile ? "w-3 h-3" : "w-2 h-2"
-            )}></div>
+            <div
+              className={cn(
+                "border border-[#000000]",
+                isMobile ? "w-3 h-3" : "w-2 h-2"
+              )}
+            ></div>
           </button>
-          
+
           {/* Always show close button */}
           <button
             className={cn(
@@ -407,27 +281,33 @@ export function Win95Window({
             )}
             onClick={handleClose}
           >
-            <div className={cn(
-              "bg-[#000000] absolute transform rotate-45",
-              isMobile ? "w-4 h-0.5" : "w-3 h-0.5"
-            )}></div>
-            <div className={cn(
-              "bg-[#000000] absolute transform -rotate-45",
-              isMobile ? "w-4 h-0.5" : "w-3 h-0.5"
-            )}></div>
+            <div
+              className={cn(
+                "bg-[#000000] absolute transform rotate-45",
+                isMobile ? "w-4 h-0.5" : "w-3 h-0.5"
+              )}
+            ></div>
+            <div
+              className={cn(
+                "bg-[#000000] absolute transform -rotate-45",
+                isMobile ? "w-4 h-0.5" : "w-3 h-0.5"
+              )}
+            ></div>
           </button>
         </div>
       </div>
-      
+
       {/* Content Area */}
-      <div className={cn(
-        "flex-1 bg-white border border-[#808080] border-t-0 border-l-0 border-r-0",
-        isMobile ? "mobile-scrollable overflow-auto" : "overflow-auto",
-        isMinimized && !isFullscreen ? "hidden" : ""
-      )}>
+      <div
+        className={cn(
+          "flex-1 bg-white border border-[#808080] border-t-0 border-l-0 border-r-0",
+          isMobile ? "mobile-scrollable overflow-auto" : "overflow-auto",
+          isMinimized && !isFullscreen ? "hidden" : ""
+        )}
+      >
         {children}
       </div>
-      
+
       {/* Resize Handles - Hidden on mobile or when in fullscreen */}
       {resizable && !isMobile && !isFullscreen && (
         <>
@@ -456,7 +336,7 @@ export function Win95Window({
           >
             <div className="absolute top-0 left-0 w-2 h-2 border-l-2 border-t-2 border-[#000000]"></div>
           </div>
-          
+
           {/* Edge resize handles */}
           <div
             className="absolute top-0 left-1/2 transform -translate-x-1/2 w-8 h-2 cursor-n-resize"

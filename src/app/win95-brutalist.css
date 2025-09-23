@@ -1,5 +1,18 @@
 /* Win95 Brutalist Theme CSS System */
 
+/* Prevent horizontal scroll on all devices */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ensure all elements respect container width */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 /* CSS Variables for Win95 Brutalist Theme */
 :root {
   /* Win95 Color Palette */

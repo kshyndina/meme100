@@ -3,6 +3,19 @@
 @tailwind utilities;
 @import './typography-extensions.css';
 
+/* Prevent horizontal scroll on all devices */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ensure all elements respect container width */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 :root {
   --radius: 1rem;
   /* Win95 Brutalist Theme Colors - Default */
