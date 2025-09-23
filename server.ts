@@ -20,7 +20,7 @@ process.on('SIGTERM', () => {
 config({ path: '.env.local' });
 
 const dev = process.env.NODE_ENV !== 'production';
-const currentPort = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+const PORT = parseInt(process.env.PORT || '3000', 10);
 // Use localhost in development, but in production use 0.0.0.0 for binding while ensuring proper host header handling
 const hostname = dev ? 'localhost' : '0.0.0.0';
 // For production, we need to ensure the client uses the proper hostname
@@ -56,7 +56,7 @@ async function createCustomServer() {
         console.log(`[${new Date().toISOString()}] Next.js internal route detected: ${req.url}`);
         // Ensure proper host header for Next.js internal routes
         if (!req.headers.host || req.headers.host.includes('0.0.0.0')) {
-          req.headers.host = `${publicHostname}:${currentPort}`;
+          req.headers.host = `${publicHostname}:${PORT}`;
           console.log(`[${new Date().toISOString()}] Updated host header to: ${req.headers.host}`);
         }
       }
@@ -77,13 +77,13 @@ async function createCustomServer() {
     setupSocket(io);
 
     // Start the server
-    server.listen(currentPort, hostname, () => {
-      console.log(`> Ready on http://${hostname}:${currentPort}`);
-      console.log(`> Socket.IO server running at ws://${hostname}:${currentPort}/api/socketio`);
+    server.listen(PORT, hostname, () => {
+      console.log(`> Ready on http://${hostname}:${PORT}`);
+      console.log(`> Socket.IO server running at ws://${hostname}:${PORT}/api/socketio`);
       
       // In development, also log the HMR WebSocket URL
       if (dev) {
-        console.log(`> Next.js HMR WebSocket should connect to ws://${hostname}:${currentPort}/_next/webpack-hmr`);
+        console.log(`> Next.js HMR WebSocket should connect to ws://${hostname}:${PORT}/_next/webpack-hmr`);
       }
     });
 

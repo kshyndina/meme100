@@ -1,0 +1,347 @@
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): server.ts src/**/*[39m
+[33m[nodemon] watching extensions: ts,tsx,js,jsx[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall:[32m[nodemon] restarting due to changes...[32m[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.[dotenv@17.2.2] injecting env (4) from .env.local -- tip: ⚙️[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  suppress all logs with { quiet: true }
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  [2025-09-23T20:31:55.838Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.854Z] Next.js internal route detected: /__nextjs_source-map?filename=webpac[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+t: localhost:3000
+[2025-09-23T20:31:55.966Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.967Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.967Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.969Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.969Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.971Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.971Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.978Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.978Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.982Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.982Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.987Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.987Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.989Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.989Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.990Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.990Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:55.992Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:55.992Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.002Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.003Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.004Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.004Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.008Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.008Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.017Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.017Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.018Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.018Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.019Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.019Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.036Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.037Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.042Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.042Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.044Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.044Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.046Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.046Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:31:56.047Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:31:56.047Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+ ○ Compiling / ...
+[2025-09-23T20:31:59.171Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:31:59.171Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+ ✓ Compiled / in 3.8s (1947 modules)
+Fetching fresh articles from Google Sheets
+ ✓ Compiled in 297ms (387 modules)
+ GET / 200 in 8118ms
+[2025-09-23T20:32:04.089Z] Incoming request: GET /.well-known/appspecific/com.chrome.devtools.json | Host: localhost:3000
+[2025-09-23T20:32:04.516Z] Incoming request: GET /_next/static/css/app/layout.css?v=1758659520489 | Host: localhost:3000
+[2025-09-23T20:32:04.518Z] Incoming request: GET /memecoin100x_logo.jpg | Host: localhost:3000
+[2025-09-23T20:32:04.520Z] Incoming request: GET /meme100_logo.png | Host: localhost:3000
+[2025-09-23T20:32:04.527Z] Incoming request: GET /_next/static/chunks/main-app.js?v=1758659520489 | Host: localhost:3000
+ ○ Compiling /_not-found ...
+[2025-09-23T20:32:04.618Z] Incoming request: GET /_next/static/chunks/app-pages-internals.js | Host: localhost:3000
+[2025-09-23T20:32:04.620Z] Incoming request: GET /_next/static/chunks/app/layout.js | Host: localhost:3000
+ ✓ Compiled /_not-found in 532ms (1936 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 630ms
+[2025-09-23T20:32:04.740Z] Incoming request: GET /_next/static/chunks/app/page.js | Host: localhost:3000
+[2025-09-23T20:32:05.140Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.140Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.143Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Flib%2Fgoogle%2Fsheets.ts | Host: localhost:3000
+[2025-09-23T20:32:05.143Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Flib%2Fgoogle%2Fsheets.ts
+[2025-09-23T20:32:05.146Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.146Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.151Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.151Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.156Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FStructuredData.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.158Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FStructuredData.tsx
+[2025-09-23T20:32:05.161Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.161Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.205Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.206Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.207Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.207Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.213Z] Incoming request: GET /memecoin100x_logo.jpg | Host: localhost:3000
+[2025-09-23T20:32:05.220Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.220Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.221Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.221Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.255Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.255Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.277Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.277Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.278Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.278Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.278Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fui%2Ftypography.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.278Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fui%2Ftypography.tsx
+[2025-09-23T20:32:05.280Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.280Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx
+[2025-09-23T20:32:05.281Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.281Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.285Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.285Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.289Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.289Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx
+[2025-09-23T20:32:05.291Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.291Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.291Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fui%2Ftypography.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.291Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fui%2Ftypography.tsx
+[2025-09-23T20:32:05.292Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.292Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.292Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.292Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.303Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.303Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.304Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.304Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.304Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.304Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.304Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fui%2Ftypography.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.304Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fui%2Ftypography.tsx
+[2025-09-23T20:32:05.304Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.304Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx
+[2025-09-23T20:32:05.309Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.310Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.316Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.316Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx
+[2025-09-23T20:32:05.316Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.316Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.316Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.316Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.317Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.317Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.320Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.320Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.321Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.321Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.321Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.321Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx
+[2025-09-23T20:32:05.321Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.321Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.328Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.328Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.329Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.329Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.330Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.331Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.331Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.331Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fnews%2FArticleList.tsx
+[2025-09-23T20:32:05.333Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.333Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.333Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.333Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.335Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.335Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.336Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.337Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.337Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.337Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.339Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.339Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.340Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.340Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.341Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.341Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.342Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.342Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.342Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.342Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.348Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.348Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.349Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.349Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.349Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.349Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.351Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.351Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.352Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.352Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.352Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.352Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.355Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.355Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.357Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.357Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.358Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.358Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.358Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.358Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.359Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.359Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.360Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.360Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.361Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.361Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.361Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.362Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.362Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.362Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.363Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.363Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.364Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.364Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.364Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.364Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.367Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.367Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
+[2025-09-23T20:32:05.368Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.368Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.369Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.369Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.373Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.373Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.374Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.374Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.376Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.376Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.376Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.376Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.378Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.378Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.379Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.379Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fcomponents%2Fseo%2FSEO.tsx
+[2025-09-23T20:32:05.380Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.380Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.383Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.383Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.384Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.385Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.386Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.386Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.416Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.417Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.422Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.422Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.435Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.435Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.447Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.447Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:05.471Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx | Host: localhost:3000
+[2025-09-23T20:32:05.471Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Fpage.tsx
+[2025-09-23T20:32:06.106Z] Incoming request: GET /api/categories | Host: localhost:3000
+ ✓ Compiled /api/categories in 318ms (1955 modules)
+Fetching fresh articles from Google Sheets
+[2025-09-23T20:32:07.536Z] Incoming request: GET /_next/static/webpack/5888b90fee1304ab.main-app.hot-update.json | Host: localhost:3000
+[2025-09-23T20:32:07.605Z] Incoming request: GET /_next/static/webpack/main-app.5888b90fee1304ab.hot-update.js | Host: localhost:3000
+ GET /api/categories 200 in 3072ms
+[2025-09-23T20:32:09.184Z] Incoming request: GET /api/categories | Host: localhost:3000
+Using cached articles data
+ GET /api/categories 200 in 5ms
+[2025-09-23T20:32:09.190Z] Incoming request: GET /api/categories | Host: localhost:3000
+Using cached articles data
+ GET /api/categories 200 in 3ms
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+> Ready on http://localhost:3000
+> Socket.IO server running at ws://localhost:3000/api/socketio
+> Next.js HMR WebSocket should connect to ws://localhost:3000/_next/webpack-hmr
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
