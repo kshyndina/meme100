@@ -1,5 +1,5 @@
-# Robots.txt for degenNews
-# https://degennews.com/robots.txt
+# Robots.txt for memecoin100x
+# https://www.memecoin100x.xyz/robots.txt
 
 # Allow all search engines
 User-agent: *
@@ -34,8 +34,8 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemaps
-Sitemap: https://degennews.com/sitemap.xml
-Sitemap: https://degennews.com/rss.xml
+Sitemap: https://www.memecoin100x.xyz/sitemap.xml
+Sitemap: https://www.memecoin100x.xyz/rss.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1

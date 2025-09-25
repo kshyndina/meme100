@@ -68,7 +68,7 @@ export default function RootLayout({
           type="website"
           data={{}}
         />
-        <link rel="icon" href="/memecoin100x_logo.jpg" type="image/jpeg" />
+        <link rel="icon" href="/favicon_memecoin100x.jpg" type="image/jpeg" />
         
         {/* Preload critical resources */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,7 +78,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         
         {/* Preload key assets */}
-        <link rel="preload" href="/memecoin100x_logo.jpg" as="image" type="image/jpeg" fetchPriority="high" />
+        <link rel="preload" href="/favicon_memecoin100x.jpg" as="image" type="image/jpeg" fetchPriority="high" />
         
         {/* Performance hints */}
         <meta httpEquiv="X-DNS-Prefetch-Control" content="on" />

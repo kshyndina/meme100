@@ -70,27 +70,57 @@
   address: '::1',
   port: 3000
 }
-t: localhost:3000
-[2025-09-23T20:31:55.966Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.967Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.967Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.969Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.969Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.971Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.971Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.978Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.978Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.982Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.982Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.987Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.987Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.989Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.989Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.990Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.990Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:55.992Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
-[2025-09-23T20:31:55.992Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
-[2025-09-23T20:31:56.002Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+> Ready on http://localhost:3000
+> Socket.IO server running at ws://localhost:3000/api/socketio
+> Next.js HMR WebSocket should connect to ws://localhost:3000/_next/webpack-hmr
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[32m[nodemon] restarting due to changes...[39m
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+> Ready on http://localhost:3000
+> Socket.IO server running at ws://localhost:3000/api/socketio
+> Next.js HMR WebSocket should connect to ws://localhost:3000/_next/webpack-hmr
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+> Ready on http://localhost:3000
+> Socket.IO server running at ws://localhost:3000/api/socketio
+> Next.js HMR WebSocket should connect to ws://localhost:3000/_next/webpack-hmr
+   Reload env: .env.local
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (5) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
 [2025-09-23T20:31:56.003Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
 [2025-09-23T20:31:56.004Z] Incoming request: GET /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx | Host: localhost:3000
 [2025-09-23T20:31:56.004Z] Next.js internal route detected: /__nextjs_source-map?filename=webpack-internal%3A%2F%2F%2F%28rsc%29%2F.%2Fsrc%2Fapp%2Flayout.tsx
@@ -345,3 +375,79 @@ Using cached articles data
 > Socket.IO server running at ws://localhost:3000/api/socketio
 > Next.js HMR WebSocket should connect to ws://localhost:3000/_next/webpack-hmr
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+[32m[nodemon] restarting due to changes...[39m
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (4) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ ⨯ uncaughtException: Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+ ⨯ uncaughtException:  Error: listen EADDRINUSE: address already in use ::1:3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use ::1:3000) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+   Reload env: .env.local
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx tsx server.ts`[39m
+[dotenv@17.2.2] injecting env (5) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.2] injecting env (0) from .env.local -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+> Ready on http://localhost:3000
+> Socket.IO server running at ws://localhost:3000/api/socketio
+> Next.js HMR WebSocket should connect to ws://localhost:3000/_next/webpack-hmr
